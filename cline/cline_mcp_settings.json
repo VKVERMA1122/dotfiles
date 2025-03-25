@@ -1,0 +1,78 @@
+{
+    "mcpServers": {
+      "duck-duck-mcp": {
+        "command": "cmd",
+        "args": [
+          "/c",
+          "npx",
+          "-y",
+          "@smithery/cli@latest",
+          "run",
+          "duck-duck-mcp",
+          "--config",
+          "\"{\\\"query\\\":\\\"query\\\",\\\"region\\\":\\\"zh-cn\\\",\\\"numResults\\\":50,\\\"safeSearch\\\":\\\"off\\\"}\""
+        ],
+        "alwaysAllow": [
+          "search"
+        ],
+        "disabled": true
+      },
+      "sequential-thinking": {
+        "command": "bunx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-sequential-thinking"
+        ],
+        "alwaysAllow": [
+          "sequentialthinking"
+        ],
+        "disabled": true
+      },
+      "@wonderwhy-er-desktop-commander": {
+        "command": "cmd",
+        "args": [
+          "/c",
+          "npx",
+          "-y",
+          "@smithery/cli@latest",
+          "run",
+          "@wonderwhy-er/desktop-commander",
+          "--config",
+          "\"{}\""
+        ],
+        "alwaysAllow": [
+          "get_file_info",
+          "list_sessions",
+          "read_file",
+          "create_directory",
+          "edit_block",
+          "write_file"
+        ],
+        "disabled": true
+      },
+      "webresearch": {
+        "command": "bunx",
+        "args": [
+          "-y",
+          "@mzxrai/mcp-webresearch@latest"
+        ],
+        "alwaysAllow": [
+          "visit_page",
+          "take_screenshot",
+          "search_google"
+        ],
+        "disabled": true
+      },
+      "fs-mcp": {
+        "command": "bunx",
+        "args": [
+          "-y",
+          "@bunas/fs-mcp@latest"
+        ],
+        "alwaysAllow": [
+          "read-file-21"
+        ],
+        "disabled": true
+      }
+    }
+  }
